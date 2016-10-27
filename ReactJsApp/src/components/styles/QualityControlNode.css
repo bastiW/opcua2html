@@ -1,0 +1,43 @@
+.qcn {
+  margin-top: 1rem;
+}
+
+.qcn p {
+  margin: 0
+}
+
+.dropdown {
+  transition: 0.5s;
+}
+
+.dropdown.open {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.warning {
+  display: none;
+}
+
+.alert {
+  color: #e85600;
+  font-weight: bold;
+}
+
+.warning.alert {
+  display: inline;
+  font-size: 2rem;
+  animation-name: shake-horizontal;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+}
+
+@keyframes shake-horizontal {
+  25% {
+    transform: translate(2px, 0);
+  }
+  75% {
+    transform: translate(-2px, 0);
+  }
+}

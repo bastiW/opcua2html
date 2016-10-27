@@ -1,0 +1,21 @@
+time {
+  font-size: 10rem;
+}
+
+.flex_center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.chevron {
+ font-size: 3rem; 
+ color: #dcdcdc;
+ min-width: 30px;
+}

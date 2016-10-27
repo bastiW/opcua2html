@@ -1,38 +1,25 @@
-node-opcua-htmlpanel
+opcua2html
 ====================
 
-small HTML panel to display a OPCUA monitored variable based on node, express, socket.io  and node-opcua
+Plotting data from a virtual OPCUA Machine via ReactJS to the browser.
+
+<img src="/docs/Screenshot.png" alt="Screenshot" width="270">
 
 
-![alt text](
-https://raw.githubusercontent.com/node-opcua/node-opcua-htmlpanel/master/doc/image.png "...")
 
+## install 
 
-#### how to install
-
-##### prerequiste 
-
-*  git
-
-
-##### step by step install 
-
-This steps describe how you can install and test the application  on a linux box, such as ubuntu.
-The application is also working on Windows, instructions left to the reader to adapt.
-
-
-    $ git clone https://github.com/node-opcua/node-opcua-htmlpanel
-    $ cd node-opcua-htmlpanel
-    $ npm i
+    $ git clone https://github.com/ja-nz/opcua2html
     $
-    $ # start server in background
-    $ node node_modules/node-opcua/bin/simple_server.js > /dev/null &
+    $ # install dependencies for Front- & Backend
+    $ opcua2html/ReactJsApp 		-> npm i
+    $ opcua2html/OPCExpressServer 	-> npm i
     $
-    $ # start the html server
-    $ node app.js
+    $ # start virtual OPC server and express server
+    $ opcua2html/OPCExpressServer	-> node node_express_server.js
+    $ opcua2html/OPCExpressServer	-> node opcua_virtual_arburg_server.js
+    $
+    $ # start the ReactJS dev server
+    $ opcua2html/ReactJsApp			-> npm start
     
-Now visit  ````http://localhost:3700' on your web browser
-    
-    
-        
-    
+For more information read the [Docs](/docs/Documentation.md "Docs")
